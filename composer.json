@@ -1,5 +1,5 @@
 {
-    "name": "KairosSystems/ldap-auth",
+    "name": "kairos-systems/ldap-auth",
     "type": "library",
     "description": "An LDAP/Active Directory/NTLM authentication driver for Laravel 4.x",
     "keywords": ["laravel", "L4", "LDAP", "Authentication", "Laravel 4", "auth"],
