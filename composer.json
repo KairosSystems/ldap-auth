@@ -1,14 +1,18 @@
 {
-    "name": "rkgarcia/l4-ldap-ntlm",
+    "name": "KairosSystems/ldap-auth",
     "type": "library",
-    "description": "An LDAP/Active Directory/NTLM authentication driver for Laravel 4.",
+    "description": "An LDAP/Active Directory/NTLM authentication driver for Laravel 4.x",
     "keywords": ["laravel", "L4", "LDAP", "Authentication", "Laravel 4", "auth"],
-    "homepage": "https://github.com/rkgarcia/l4-ldap-ntlm",
+    "homepage": "https://github.com/KairosSystems/ldap-auth",
     "license": "MIT",
     "authors": [
         {
             "name": "Brian Wells",
             "email": "wells@users.noreply.github.com"
+        },
+        {
+            "name": "Roberto García",
+            "email": "rkgarcia@unixmexico.org"
         }
     ],
     "require": {
@@ -17,7 +21,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Wells\\L4LdapNtlm": "src/"
+            "KairosSystems\\LdapAuth": "src/"
         }
     },
     "minimum-stability": "dev"

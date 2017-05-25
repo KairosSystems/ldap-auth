@@ -1,4 +1,4 @@
-<?php namespace Wells\L4LdapNtlm;
+<?php namespace KairosSystems\LdapAuth;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
  * @author Brian Wells (https://github.com/wells/)
  * 
  */
-class L4LdapNtlmServiceProvider extends ServiceProvider {
+class LdapAuthServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -29,8 +29,8 @@ class L4LdapNtlmServiceProvider extends ServiceProvider {
 		//Add the LDAP/NTLM Auth driver
 		$this->app['auth']->extend('ldap', function($app)
 		{
-			return new L4LdapNtlmGuard(
-				new L4LdapNtlmUserProvider(
+			return new LdapAuthGuard(
+				new LdapAuthUserProvider(
 					$app['config']->get('auth.ldap')
 				),
 				$app->make('session.store')

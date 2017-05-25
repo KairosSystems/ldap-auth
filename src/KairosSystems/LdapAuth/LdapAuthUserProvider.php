@@ -1,4 +1,4 @@
-<?php namespace Wells\L4LdapNtlm;
+<?php namespace KairosSystems\LdapAuth;
 
 use Illuminate\Auth\UserProviderInterface;
 use Illuminate\Auth\UserInterface;
@@ -10,7 +10,7 @@ use Illuminate\Auth\GenericUser;
  * @author Brian Wells (https://github.com/wells/)
  * 
  */
-class L4LdapNtlmUserProvider implements UserProviderInterface
+class LdapAuthUserProvider implements UserProviderInterface
 {
 	/**
 	 * The Eloquent user model

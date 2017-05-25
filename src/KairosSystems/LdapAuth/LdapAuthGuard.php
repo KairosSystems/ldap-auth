@@ -1,4 +1,4 @@
-<?php namespace Wells\L4LdapNtlm;
+<?php namespace KairosSystems\LdapAuth;
 
 use Illuminate\Auth\Guard;
 
@@ -8,7 +8,7 @@ use Illuminate\Auth\Guard;
  * @author Brian Wells (https://github.com/wells/)
  * 
  */
-class L4LdapNtlmGuard extends Guard
+class LdapAuthGuard extends Guard
 {
 	public function admin()
 	{

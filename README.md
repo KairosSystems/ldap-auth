@@ -1,4 +1,4 @@
-l4-ldap-ntlm
+ldap-auth
 ============
 
 An LDAP/Active Directory/NTLM authentication driver for Laravel 4.
@@ -12,7 +12,7 @@ To install this in your application add the following to your `composer.json` fi
 
 ```json
 require {
-	"wells/l4-ldap-ntlm": "dev-master"
+	"KairosSystems/ldap-auth": "dev-master"
 }
 ```
 
@@ -22,7 +22,7 @@ Once you have finished downloading the package from Packagist.org you need to te
 
 Open `app/config/app.php` and add:
 
-`Wells\L4LdapNtlm\L4LdapNtlmServiceProvider`
+`KairosSystems\L4LdapNtlm\L4LdapNtlmServiceProvider`
 
 This tells Laravel 4 to use the service provider from the vendor folder.
 
@@ -37,7 +37,7 @@ Add the following config into your `app/config/auth.php` file
 
 ```js
 /**
- * LDAP Configuration for wells/l4-ldap-ntlm
+ * LDAP Configuration for KairosSystems/ldap-auth
  */
 'ldap' => array(
 	// Domain controller (host), Domain to search (domain), 
